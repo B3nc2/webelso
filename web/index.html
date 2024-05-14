@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kő-Papír-Olló játék</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="center">
+            <h1>
+                <img src="kovecske.jpg" alt="Kő" title="kovecske"  onclick="play('kő')">
+                <img src="papirocska.jpg" alt="Papír" title="papirocska" onclick="play('papír')">
+                <img src="ollocska.png" alt="Olló" title="ollocska" onclick="play('olló')"></h1>
+                
+                <p>Válassz fegyvert!</p>
+                <div id="result"></div>
+                <script src="script.js"></script>
+                <div class="results">
+                    <p>Nyert: <span id="winCount">0</span></p>
+                    <p>Vesztett: <span id="loseCount">0</span></p>
+                    <p>Döntetlen: <span id="tieCount">0</span></p>
+                    <button onclick="resetCounts()">Reset</button>
+                </div>
+        
+        </div>
+        
+    </div>
+    
+</body>
+</html>
